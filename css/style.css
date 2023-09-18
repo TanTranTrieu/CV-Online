@@ -1,0 +1,589 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+.row {
+  width: 1170px;
+  margin: auto;
+  padding: 30px 50px;
+}
+
+/* ============== My Styles Start Here ============= */
+
+/* section > .container {
+  max-width: 1170px;
+} */
+
+body {
+  font-family: "Arimo";
+}
+
+/* === Styles for Banner section === */
+.background-image {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/banner.jpg);
+  height: 70vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text-group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: white;
+}
+
+.name {
+  font-weight: lighter;
+  font-size: 36px;
+  font-family: "Arimo", sans-serif;
+}
+
+.career {
+  font-family: "open_sansregular", sans-serif;
+  font-size: 14px;
+  color: #ced4da;
+  font-weight: 100;
+}
+
+/* === Styles for nav-bar Section === */
+
+/* === Styles for Navigation Bar === */
+#nav-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  padding: 0;
+
+  color: black;
+}
+
+#nav-bar .container > .group-info {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#nav-bar .container a:link,
+#nav-bar .container a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* === icon for navbar === */
+.icon-user,
+.icon-doc-text-inv,
+.icon-mail-alt,
+.icon-star-1,
+.icon-twitter,
+.icon-facebook,
+.icon-gplus,
+.icon-linkedin {
+  color: #199cdb;
+}
+
+#nav-bar .container .text-group-1 .name {
+  font-size: 20px;
+  color: black;
+}
+
+#nav-bar .container .text-group-1 .career {
+  color: #ced4da;
+  font-size: 12px;
+}
+
+.text-group-1 {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+#nav-bar .container > div {
+  border-left: 1px solid #ced4da;
+}
+
+#nav-bar .container div:last-child {
+  border-right: 1px solid #ced4da;
+}
+
+/* === Styles for About Section ==== */
+
+#about {
+  background-color: transparent;
+}
+
+#about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container #personal-info ul {
+  list-style-type: none;
+}
+
+.container #target {
+  background-color: #f7f7f7;
+  padding-top: 52px;
+  padding-left: 32px;
+  padding-right: 12px;
+}
+
+.container #personal-info {
+  background-color: #f0f0f0;
+  padding-top: 52px;
+  padding-right: 12px;
+  padding-left: 32px;
+  margin-top: 0 !important;
+}
+
+/* ==================== */
+
+#about .container .section-title {
+  font-weight: lighter;
+  margin: 24px 0;
+}
+
+#about .container #target p {
+  color: #868e96; /* gray 6 */
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#about .container #target p b {
+  font-weight: normal;
+}
+
+#personal-info .info {
+  font-size: 14px;
+  color: #868e96; /* gray 6 */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#personal-info .info li span {
+  margin: 0;
+  color: black;
+}
+
+#personal-info .list-icons {
+  margin: 24px 0 48px 0;
+}
+
+/* === Styles for job-info section === */
+#job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+  gap: 16px 16px;
+}
+
+#job-info .container .card {
+  border: 1px solid #f0f0f0;
+  padding: 48px 12px 48px 12px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.details-info ~ .details-info {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.role-year ~ div {
+  color: #868e96;
+}
+
+#job-info .container .card .heading > .header,
+i {
+  display: inline-block;
+}
+
+#job-info .container .card .heading {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+#job-info .container .card .heading .header {
+  /* width: fit-content; */
+  font-size: 27px;
+  padding: 12px 0 12px 25px;
+  font-weight: lighter;
+}
+
+.circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #199cdb;
+  justify-self: center;
+  margin-top: 5px;
+}
+
+.year {
+  font-family: "open_sansitalic", sans-serif;
+  font-size: 12px;
+  color: #868e96;
+}
+
+.details-info .now {
+  padding: 2px 12px;
+  background-color: #199cdb;
+  border-radius: 6px;
+  color: white;
+  font-weight: normal;
+}
+
+/* icon cho đề mục -- heading */
+.ic-toolbox,
+.ic-pencil,
+.ic-telescope,
+.ic-mic,
+.ic-tools-2 {
+  font-size: 44px;
+  color: #868e96;
+}
+
+#job-info .container .details-info {
+  display: grid;
+  /* grid-template-columns: 50px auto; */
+  grid-template-columns: 50px 1fr;
+  row-gap: 10px;
+}
+
+/* Sở thích */
+/* icon sở thích */
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  font-size: 20px;
+  color: #199cdb;
+}
+
+.hobbies,
+.hobbies-item {
+  display: flex;
+}
+
+.hobbies {
+  padding-left: 25px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hobbies-item {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#job-info .container .card .hobbies .hobbies-item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #199cdb;
+  width: 50px;
+  height: 50px;
+}
+
+#job-info .container .card .hobbies .hobbies-item .hobbies-name {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #868e96;
+}
+
+/* Ngôn ngữ */
+#job-info .container .card .foreign-language {
+  padding-left: 25px;
+}
+
+.level {
+  display: inline-block;
+  margin-right: 12px;
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #199cdb;
+}
+
+.non-level {
+  background-color: #f3f3f3;
+}
+
+/* Kỹ năng */
+#job-info .container .card .skills-tech {
+  padding-left: 25px;
+}
+
+.card .skills-tech p,
+.card .foreign-language p {
+  color: initial;
+}
+
+/* ====    Chứng chỉ    ==== */
+
+#certificate .container .certificate-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 14px;
+  /* justify-items: center; */
+  /* row-gap: 12px; */
+}
+
+#certificate .container .certificate-info .section-title {
+  /* justify-self: start; */
+  /* padding-left: 16px; */
+  /* margin-top: 32px; */
+  margin-bottom: 48px;
+  margin-left: 16px;
+  width: 100%;
+}
+
+#certificate .certificate-info .certificate-info-item img {
+  /* width: 160px; */
+  width: 200px;
+}
+
+#certificate .container .certificate-info .certificate-info-item {
+  display: flex;
+  gap: 16px;
+}
+
+.achievement {
+  color: #868e96;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+#certificate
+  .container
+  .certificate-info
+  .row-1
+  .certificate-info-item:first-child {
+  padding-right: 13px;
+}
+
+#certificate
+  .container
+  .certificate-info
+  .row-1
+  .certificate-info-item:last-child {
+  border-left: 1px solid #d6c08d;
+  padding-left: 12px;
+}
+
+.row-1 {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid #d6c08d;
+  padding-bottom: 32px;
+  margin: 0 16px;
+}
+
+.row-2 {
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* =============== Styles for Projects ================= */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+#project .container .section-title {
+  margin-left: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 600px; */
+}
+
+img {
+  width: 100%;
+}
+
+.project-img {
+  display: inline-block;
+}
+
+.general-info {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  padding: 8px 0;
+  color: #868e96;
+}
+
+.general-info > div {
+  margin-left: 24px;
+}
+
+.container-project-name {
+  border: 1px solid #f0f0f0;
+}
+
+.project-name {
+  padding: 12px 24px;
+}
+
+#project .general-info .year {
+  color: white;
+  border-radius: 20px;
+  padding: 6px 12px;
+  background-color: #199cdb;
+  font-family: "open_sansregular";
+}
+
+.project-card-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.school,
+.my-role {
+  display: flex;
+  gap: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  border-spacing: 12px;
+  border: 1px solid #f0f0f0;
+  /* height: 220px; */
+  color: #868e96;
+  /* min-height: 250px; */
+  flex-grow: 1;
+}
+
+td {
+  vertical-align: top;
+  padding: 8px 8px;
+  line-height: 1.3;
+}
+
+/* td:last-child {
+  width: 60%;
+} */
+
+tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.group-3-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* === Styles for Footer ==== */
+
+#footer .container ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+#footer .container ul li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#footer .container ul li a:link,
+#footer .container ul li a:visited {
+  text-decoration: none;
+  color: #868e96;
+}
+
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
+  font-size: 30px;
+  color: #199cdb;
+}
+
+/* === Phần Nâng Cao === */
+
+#nav-bar .container .text-group-1 {
+  position: relative;
+}
+
+#nav-bar .container .text-group-1 .personal-img {
+  position: absolute;
+  top: 0;
+  left: 72.44px;
+  border: none;
+  transform: translate(0, -35%);
+}
+
+#nav-bar .container .text-group-1 .personal-img img {
+  width: 128px;
+  height: 128px;
+  border: 6px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px #888888;
+}
+
+/* === for large screen === */
+
+/* @media screen and (max-width:1200px) {
+
+  
+} */

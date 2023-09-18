@@ -1,0 +1,167 @@
+@media screen and (max-width: 1200px) {
+  section > .container {
+    /* width: auto !important; */
+    width: inherit;
+  }
+}
+
+/* @media screen and (max-width: 1170px) {
+
+
+  .text-group-1 > * {
+    display: none;
+  }
+  .text-group-1 {
+    padding: 0;
+    width: 5%;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .text-group-1 > * {
+    display: none;
+  }
+  .text-group-1 {
+    padding: 0;
+    width: 5%;
+  }
+
+  /*  */
+
+  #certificate .container .certificate-info .certificate-info-item {
+    flex-direction: column;
+  }
+
+  #certificate .container .certificate-info .certificate-info-item img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* @media screen and (max-width:1024px) */
+@media screen and (max-width: 1024px) {
+  /* General Rules */
+  /* section > .container {
+    width: inherit;
+    margin: auto;
+    display: block;
+  } */
+
+  /* .text-group-1 > * {
+    display: none;
+  }
+  .text-group-1 {
+    padding: 0;
+    width: 5%;
+  } */
+
+  .background-image {
+    background-position: center;
+  }
+
+  /* Job Info section */
+
+  #job-info .container {
+    padding: 30px 5rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* grid-auto-flow: dense; */
+    /* align-items: start; */
+    /* justify-items: start; */
+  }
+
+  /* .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    
+  } */
+
+  /* .card-1 {
+    order: 1;
+    grid-row: 1/2;
+  } */
+
+  /* .card-2 {
+    order: 4;
+    grid-row: 2/3;
+  } */
+
+  /* .card-3 {
+    order: 4;
+    
+  } */
+
+  /* .card-4 {
+    order: 3;
+    grid-row: 4/5;
+  } */
+
+  /* .card-5 {
+    order: 5;
+    grid-row: 4/6;
+  } */
+
+  /* .card-6 {
+    order: 3;
+    grid-row: 3/4;
+  } */
+
+  /* Projects section */
+
+  /* .group-3-card {
+    grid-template-columns: repeat(auto-fill, minmax(299px, 1fr));
+  } */
+
+  .general-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 12px;
+  }
+
+  .general-info .my-role {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    margin-left: 0;
+  }
+
+  .general-info .school {
+    margin-left: 0;
+  }
+
+  .general-info .year {
+    justify-self: flex-start;
+    margin-left: 0;
+  }
+
+  /* Chứng Chỉ giải thưởng */
+  /* #certificate .container .certificate-info .certificate-info-item {
+    flex-direction: column;
+  }
+
+  #certificate .container .certificate-info .certificate-info-item img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  } */
+}
+
+/* @media screen and (max-width: 1200px) {
+  .group-3-card {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .group-3-card {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    /* grid-template-columns: repeat(3, minmax(100px, 1fr)); */
+  }
+
+  .general-info {
+    font-size: 14px;
+  }
+}
